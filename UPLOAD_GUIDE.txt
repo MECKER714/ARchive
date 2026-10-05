@@ -1,0 +1,16 @@
+ARchive GitHub Pages 업로드 안내
+
+1. ARchive-GitHub-Pages.zip을 압축 해제합니다.
+2. 압축 안의 index.html, assets, models, vendor, licenses, favicon.svg, .nojekyll을 저장소 루트에 올립니다.
+   ZIP 자체를 올리지 마세요. 저장소 첫 화면에 index.html이 보여야 합니다.
+3. 저장소 Settings > Pages > Deploy from a branch에서 업로드한 브랜치와 /(root)를 선택하고 저장합니다.
+4. GitHub가 제공하는 사이트 주소로 접속합니다.
+
+PC를 켜 두거나 별도의 서버를 실행할 필요가 없습니다.
+기본 3D 작품 3점과 뷰어 라이브러리가 포함되어 있습니다.
+사용자가 추가하는 작품은 해당 브라우저에만 저장됩니다. 다른 방문자에게는 보이지 않습니다.
+브라우저 데이터를 삭제하면 추가 작품도 사라질 수 있으므로 원본을 보관하세요.
+index.html 더블클릭 실행은 지원하지 않으며 GitHub Pages 주소로 접속해야 합니다.
+
+소스 수정은 별도 ARchive-Source.zip과 README.md를 참고하세요.
+이 파일 묶음은 배포 준비본이며 제작자가 GitHub에 업로드하지 않았습니다.
