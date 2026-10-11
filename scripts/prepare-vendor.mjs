@@ -1,0 +1,11 @@
+import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+const source = 'node_modules/three/examples/jsm/libs';
+for (const folder of ['public/vendor/draco', 'public/vendor/basis', 'public/licenses']) await mkdir(folder, { recursive: true });
+for (const file of ['draco_decoder.js', 'draco_decoder.wasm', 'draco_wasm_wrapper.js']) await copyFile(`${source}/draco/gltf/${file}`, `public/vendor/draco/${file}`);
+for (const file of ['basis_transcoder.js', 'basis_transcoder.wasm']) await copyFile(`${source}/basis/${file}`, `public/vendor/basis/${file}`);
+const meshopt = await readFile(`${source}/meshopt_decoder.module.js`, 'utf8');
+if (!meshopt.includes('export { MeshoptDecoder };')) throw new Error('Unexpected meshopt module format');
+await writeFile('public/vendor/meshopt_decoder.js', meshopt.replace('export { MeshoptDecoder };', 'self.MeshoptDecoder = MeshoptDecoder;'));
+await copyFile('node_modules/three/LICENSE', 'public/licenses/three.txt');
+await copyFile('node_modules/@google/model-viewer/LICENSE', 'public/licenses/model-viewer.txt');
+console.log('All model decoders bundled locally.');

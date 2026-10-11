@@ -1,0 +1,18 @@
+ARchive 모델 교체본 — 2026-10-11
+
+압축을 푼 내용 전체를 기존 GitHub 저장소의 같은 위치에 업로드하여 덮어쓰세요.
+index.html, assets 폴더와 models 폴더를 함께 업데이트해야 모델과 문구가 모두 바뀝니다.
+ZIP 파일 자체를 업로드하지 마세요.
+
+교체 내역:
+- continuum.glb: Gothic Cathedral Structure (제공한 still.stl)
+- still.glb: Sagrada Família 내부 구조 (seccio_sagrada_familia_1.stl)
+- balance.glb: Twisted Towers (Skulpturelle_Architektur_P1_v4.stl)
+기존 링크 호환성을 위해 GLB 파일명과 작품 ID는 유지했습니다.
+모델 URL에 버전을 붙여 이전 모델 캐시를 피하도록 했습니다.
+
+요청한 '기본 작품 3점 · 추가한 작품은 이 브라우저에만 저장' 문구를 삭제했습니다.
+브라우저 저장 기능의 동작은 기존과 같습니다.
+원작자 정보가 제공되지 않아 화면에는 작가 정보 미등록으로 표시합니다.
+
+GitHub에는 자동 업로드하지 않았습니다. 별도 서버나 제작자 컴퓨터 연결은 없습니다.
